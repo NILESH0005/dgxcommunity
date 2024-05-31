@@ -1,0 +1,93 @@
+/* src/CommunityGuidelines.css */
+
+:root {
+	--color-bg: #040C18;
+	--color-primary: #6aa700;
+	--color-secondary: #ffffff;
+	--color-text: #ffffff;
+	--color-text-muted: #aaaaaa;
+	--box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  body {
+	font-family: Arial, sans-serif;
+	background-color: var(--color-bg);
+	color: var(--color-text);
+	margin: 0;
+	padding: 0;
+	line-height: 1.6;
+  }
+  
+  .guidelines-container {
+	max-width: 800px;
+	margin: 40px auto;
+	padding: 20px 40px;
+	background-color: var(--color-bg);
+	border-radius: 8px;
+	box-shadow: var(--box-shadow);
+	border: 1px solid var(--color-primary);
+  }
+  
+  .guidelines-container h1 {
+	text-align: center;
+	font-size: 2em;
+	color: var(--color-primary);
+	margin-bottom: 20px;
+  }
+  
+  .guidelines-container section {
+	margin-bottom: 20px;
+  }
+  
+  .guidelines-container h2 {
+	font-size: 1.5em;
+	color: var(--color-secondary);
+	margin-top: 20px;
+  }
+  
+  .guidelines-container ul {
+	list-style-type: disc;
+	padding-left: 20px;
+	color: var(--color-text-muted);
+  }
+  
+  .guidelines-container li {
+	margin-bottom: 10px;
+  }
+  
+  .guidelines-container p {
+	font-size: 1em;
+	color: var(--color-text);
+  }
+  
+  .guidelines-container button {
+	display: block;
+	margin: 30px auto;
+	padding: 12px 24px;
+	background-color: var(--color-primary);
+	color: var(--color-secondary);
+	border: none;
+	border-radius: 5px;
+	font-size: 1em;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+  }
+  
+  .guidelines-container button:hover {
+	background-color: #0056b3;
+  }
+  
+  .guidelines-container h3 {
+	font-size: 1.2em;
+	color: var(--color-primary);
+	margin-top: 15px;
+  }
+  
+  .guidelines-container a {
+	color: var(--color-primary);
+	text-decoration: none;
+  }
+  
+  .guidelines-container a:hover {
+	text-decoration: underline;
+  }
