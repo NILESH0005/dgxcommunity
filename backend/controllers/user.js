@@ -99,11 +99,17 @@ export const verifyemail = async (req, res) => {
           return;
         }
 
-        if (rows.length > 0) {
-          res.json({ message: { "success": true, "Data": rows } })
-          closeConnection();
+        if (rows.length > 0 ) {
+          if( rows.flag_password_change ==0){
+          res.json({ message: { "success": true, "Data": rows[0] } })
+          closeConnection();}
+          else{
+            res.json({ message: { "success": true, "Data": rows[0] } })
+            closeConnection();
+          }
         } else {
           res.json({ message: { "success": false, "Data": userEmail } })
+          closeConnection();
         }
 
 
@@ -153,7 +159,7 @@ export const Login = async (req, res) => {
             }, {});
 
 
-            res.json({ message: { "success": true, "Data": data } })
+            res.json({ message: { "success": true, "Data": data, "old":true } })
           } else {
             console.log("Access denied");
             res.status(200).json({ message: { "success": false, "Data": "Invalid Credentials" } })

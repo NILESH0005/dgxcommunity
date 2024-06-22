@@ -27,7 +27,7 @@
 // db.js
 import sql from 'msnodesqlv8';
 
-const connectionString = 'Driver={ODBC Driver 17 for SQL Server};Server=LAPTOP-OSVIB75B\\SQLEXPRESS;Database=DGX_COMMUNITY;Trusted_Connection=yes;';
+const connectionString = 'Driver={ODBC Driver 17 for SQL Server};Server=DESKTOP-UC5U2HE\\SQLEXPRESS;Database=DGX_COMMUNITY;Trusted_Connection=yes;';
 
 let connection;
 

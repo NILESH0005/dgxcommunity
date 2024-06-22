@@ -1,0 +1,351 @@
+.discussion-header {
+    position: relative;
+    height: 300px;
+    background: url('D:\Node\dgx\dgx-community\public\IMAGES\nvbackground.3d29d9fd8361f49663af.jpg') no-repeat center center/cover;
+}
+
+.discussion-header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 25%;
+    flex-direction: column;
+    align-content: center;
+    background-color: #292b2e;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 4px;
+}
+
+.topDiscus{
+    /* display: flex;
+    justify-content: flex-start; */
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    align-content: center;
+    background-color: #707274;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 4px;
+    height: 40vh;
+
+}
+
+.recentDiscus{
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    align-content: center;
+    background-color: #707274;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 4px;
+    height: 35vh;
+ 
+}
+
+.activeUsers{
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    align-content: center;
+    background-color: #707274;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 4px;
+    height: 10vh;  
+}
+.subform_main{
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    min-height: 60vh
+}
+
+
+.subform_post{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+    width: 75%;
+}
+.discussion-header h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.discussion-header p {
+    font-size: 20px;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14PX;
+    font-family: 'Titillium Web', sans-serif;
+
+}
+
+a {
+    color: #ff0042;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+
+.discussion_container {
+    margin: 20px;
+    padding: 20px;
+    min-height: 72vh;
+}
+
+.subforum {
+    margin-top: 20px;
+}
+
+.subforum-title {
+    background-color: #292b2e;
+    padding: 5px;
+    border: 5px;
+    margin: 4px;
+}
+
+.subforum-description * {
+    margin-block: 0;
+}
+
+.subforum-row {
+    display: grid;
+    grid-template-columns: 12% 65% 23%;
+}
+
+.subforum-column1{
+    padding: 10px;
+    margin: 4px;
+    border-radius: 10px;
+    background-color: #292b2e;
+    width: 70%;
+} 
+
+.subforum-column {
+    padding: 10px;
+    margin: 4px;
+    border-radius: 5px;
+    background-color: #292b2e;
+}
+
+.subforum-column img{
+    width: 55%;
+}
+
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* for smart phones*/
+@media screen and (max-width: 460) {
+    .discussion_container {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .subforum-row {
+        display: grid;
+        grid-template-columns: 25% 75%;
+        grid-template-rows: 65% 35%;
+    }
+
+    .subforum-stats {
+        font-size: 12px;
+    }
+
+    .subforum-divider {
+        display: none;
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(190, 190, 190, 0), rgba(255, 255, 255, 0.75), rgba(190, 190, 190, 0));
+    }
+}
+
+@media screen and (min-width: 460px) and (max-width:1024px) {
+    .discussion_container {
+        margin: 15px;
+        padding: 15px;
+    }
+
+    .subforum-row {
+        display: grid;
+        grid-template-columns: 10% 60% 10% 20%;
+    }
+
+    html {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+}
+
+.search-box {
+    border: solid 1px #76B900;
+    margin-top: 20px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 1px 2px 3px #76B900;
+}
+
+.search-box select {
+    padding: 10px;
+}
+
+.search-box input {
+    padding: 10px;
+}
+
+.search-box button {
+    padding: 10px;
+    background-color: #fff;
+    color: #000000;
+}
+
+.search-box button:hover {
+    background-color: #000000;
+    color: #fff;
+    box-shadow: 1px 2px 3px #fff;
+}
+
+@media screen and (max-width:460px) {
+
+    .search-box input,
+    .search-box button,
+    .search-box select {
+        min-width: 300px;
+        margin-top: 5px;
+    }
+}
+
+.createPost{
+    display: block;
+	/* margin: 30px auto; */
+	padding: 12px 24px;
+	background-color: var(--color-primary);
+	color: var(--color-secondary);
+	border: none;
+	border-radius: 5px;
+	font-size: 1em;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+
+    
+    margin: 4px;
+    
+}
+.modal form{
+    height: 400px;
+    width: 700px;
+}
+
+
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  .modal-guts {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    max-width: 100%;
+    height: 400px;
+    max-height: 100%;
+    padding: 20px 50px 20px 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: auto;
+  }
+  
+  .modal-content {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .modal-content:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .modal textarea {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    resize: vertical;
+  }
+  
+  .modal button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .modal button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }

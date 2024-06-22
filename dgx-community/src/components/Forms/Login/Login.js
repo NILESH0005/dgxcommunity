@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import '../Register/Register.css'
+import './Login.css'
 import { FaUser, FaLock } from "react-icons/fa";
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom'
@@ -12,6 +12,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, toast } from 'react-toastify';
 
 const Login = ({ setCurrentForm }) => {
+    // const [userToken, setUserToken] = useState(null);
 
     const [email, setEmail] = useState("");
     const [password, setpassword] = useState("")
@@ -38,6 +39,20 @@ const Login = ({ setCurrentForm }) => {
     // }
     // switchLogin()
 
+    // useEffect(() => {
+    //     // Retrieve the token from the cookie
+    //     const token = Cookies.get('userToken');
+    //     if (token) {
+    //       try {
+    //         const parseToken = JSON.parse(token);
+    //         // console.log(parseToken);
+    //         setUserToken(parseToken);
+    
+    //       } catch (e) {
+    //         console.log("Failed to parse token:", e);
+    //       }
+    //     }
+    //   }, []);
 
     const handleLogin = (e) => {
         e.preventDefault();
@@ -46,14 +61,13 @@ const Login = ({ setCurrentForm }) => {
 
                 if (result.data.message.success) {
                     Cookies.set('userToken', JSON.stringify(result.data.message.Data), { expires: 7 });
-
-
-
                     // console.log(result.data.message.Data);
                     if (!result.data.message.Data.flag_password_change) {
-                        toast.success('Wellcome user change your password');
+                        toast.success('Welcome user change your password');
                         setTimeout(() => {
-                            setCurrentForm(3)
+                            // setCurrentForm(3)
+                            navigate('/ChangePassword');
+                            window.location.reload(true)
                         }, 1000);
                     } else {
                         toast.success('You have login successfully');
@@ -61,6 +75,8 @@ const Login = ({ setCurrentForm }) => {
                         setTimeout(() => {
 
                             navigate('/');
+                            window.location.reload(true);
+                            toast.success("Login with new credentials to Continue")
                         }, 1000);
                     }
                 }
@@ -92,34 +108,56 @@ const Login = ({ setCurrentForm }) => {
                 pauseOnHover
                 theme="light"
             />
-            <div className='user_Container' style={{background: "blue"}}>
-                <div className='curved-shape' id='cs1'></div>
-                <div className='curved-shape2' id='cs2'></div>
-                <div className='user_form-box Login' id="login">
-                    <h2>Log In</h2>
-                    <form onSubmit={handleLogin}>
-                        <div className='user_input-box'>
+
+            <header className="loginHeader">
+                <div className="overlay">
+                    <h1>Log In</h1>
+                    <h3>Welcome to the community to lead world's innovations</h3>
+                </div>
+            </header>
+            <div className='user_ContainerLogin' >
+                <div className='curved-shapeLogin' id='cs1'></div>
+                <div className='curved-shape2Login' id='cs2'></div>
+                <div className='user_form-boxLogin Login' id="login">
+                    {/* <h2>Log In</h2> */}
+                    <form onSubmit={handleLogin} className='loginForm'>
+                        <div className='user_input-boxLogin'>
                             <input type='text' required
                                 value={email}
                                 onChange={(e) => { setEmail(e.target.value) }} />
                             <label>User email</label>
-                            <FaUser className='user_icon' />
+                            <FaUser className='user_iconLogin' />
                         </div>
-                        <div className='user_input-box'>
+                        <div className='user_input-boxLogin'>
                             <input type='password' required
                                 value={password}
                                 onChange={(e) => { setpassword(e.target.value) }}
                             />
                             <label>User Password</label>
-                            <FaLock className='user_icon' />
+                            <FaLock className='user_iconLogin' />
                         </div>
-                        <div className='user_input-box'>
-                            <button type='submit' className='user_Login-btn'>Login</button>
+                        <div className='user_input-boxLogin'>
+                            <button type='submit' className='user_Login-btnLogin'>Login</button>
                         </div>
 
                     </form>
                 </div>
             </div>
+
+
+
+            {/* <div className='loginContainer' id='loginContainer'>
+                <div>
+                    <form>
+                        <h1>Log In</h1>
+                        {/* <div className='social-icons'></div> */}
+            {/* <input type='text' placeholder='email'/>
+                        <input type='password' placeholder='password'/>
+                        <a href='#'>Forget Your Password</a>
+                        <button>Log In</button>
+                    </form>
+                </div>
+            </div> */}
         </>
     )
 }

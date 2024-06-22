@@ -1,5 +1,8 @@
-
+.nav-discussion select{
+  padding: 10px;
+}
 .dgx_navbar {
+ 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -138,3 +141,97 @@
   
   }
   
+
+
+
+  .button[type="button"] {
+    /* Style the sign up button */
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    
+  }
+
+  .loginBtn  {
+    margin-left: auto;
+    /* border-radius: 10px; */
+  }
+  
+  .loginBtn button {
+    background-color: #4CAF50; /* green */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    
+  }
+  
+  .loginBtn button:hover {
+    background-color: #3e8e41; /* darker green on hover */
+  }
+
+
+
+  /*-------------------dropdown----------*/
+
+  .dropdown-container {
+    position: relative;
+    left: 240px;
+    bottom: 10px;
+
+
+  }
+  
+  .dropdown-content {
+    display: flex;
+    position: absolute;
+    background-color: #0000;
+    flex-direction: column;
+    min-width: 220px;
+    padding: 10px;
+    z-index: 1;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .dropdown-content a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .dropdown-container a:hover {
+    background-color: #ddd;
+  }
+  
+  .profileBtn:hover + .dropdown-content {
+    display: block;
+  }
+
+  .profileBtn{
+    padding: 0;
+    margin-left: 50;
+    scroll-behavior: smooth;
+  }
+  .profileBtn span{
+    font-size: 20px;
+    position: relative;
+    bottom: 15px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .profileBtn {
+      margin-left: 20px; /* Adjusted margin for smaller screens */
+    }
+    
+    .profileBtn span {
+      font-size: 16px; /* Decreased font size for smaller screens */
+      bottom: 10px; /* Adjusted relative position for smaller screens */
+    }
+  }

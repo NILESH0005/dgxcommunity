@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './HomeCommunity.css'
 import RegisterModal from '../../components1/RegisterModal';
 import RegisterLogin from '../Forms/Register/Register';
@@ -7,11 +7,29 @@ import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useNavigate } from 'react-router-dom';
-import { useAuth } from '../../contexts/AuthContext';
+import Cookies from 'js-cookie';
+
+// import { useAuth } from '../../contexts/AuthContext';
 
 const HomeCommunity = () => {
 
- 
+  const [userToken, setUserToken] = useState(null);
+  useEffect(() => {
+    // Retrieve the token from the cookie
+    const token = Cookies.get('userToken');
+    if (token) {
+      try {
+        const parseToken = JSON.parse(token);
+        console.log(parseToken);
+        setUserToken(parseToken);
+
+      } catch (e) {
+        console.log("Failed to parse token:", e);
+      }
+    }
+  }, []);
+
+
   // const[activeform, setActive]= useState('');
 
   // const showLoginForm = () => setActiveForm('login');
@@ -59,11 +77,20 @@ const HomeCommunity = () => {
         .then(response => {
           console.log('Response:', response.data.message.success);
           if (response.data.message.success) {
-            toast.success('Check your email for credentials to login');
-            setTimeout(() => {
+            if (response.data.message.Data.flag_password_change == false) {
+              toast.success('Check your email for credentials to login');
+              setTimeout(() => {
 
-              navigate('/MainForm', { state: { form: 1 } });
-            }, 1000);
+                navigate('/MainForm', { state: { form: 1 } });
+              }, 1000);
+            }
+            else if(response.data.message.Data.flag_password_change == true){
+              toast.success('Login to Continue');
+              setTimeout(() => {
+
+                navigate('/MainForm', { state: { form: 1 } });
+              }, 1000);
+            }
           }
           else {
             toast.success('Sorry you are not a part of community yet please register with you details and referal code');
@@ -162,12 +189,15 @@ const HomeCommunity = () => {
         </section> */}
         <div className='dgx_header section_padding' id='home'>
           <div>
-            <div className='dgx_header-content'>
-              <h1 className='gradient_text'>Welcome to the NVIDIA DGX Community Certifications Connect!</h1>
+            {userToken ? (<> <div className='dgx_header-content'>
+              <h1 className='gradient_text'>Welcome {userToken.Name} to the NVIDIA DGX Community Certifications Connect!</h1>
+              <p>Building a stronger tomorrow!</p>
+            </div></>) : (<div className='dgx_header-content'>
+              <h1 className='gradient_text'>Welcome  to the NVIDIA DGX Community Certifications Connect!</h1>
               <p>Hurry up join our community now!</p>
               <p>Building a stronger tomorrow!</p>
-            </div>
-            <div className='dgx_header-content_input'>
+            </div>)}
+            {userToken ? <></> : (<div className='dgx_header-content_input'>
               <input placeholder='Your Email Address' type='email'
                 name="EmailId"
                 value={email}
@@ -176,7 +206,7 @@ const HomeCommunity = () => {
                 id='email-field'
                 required ></input>
               <button type='button' onClick={handleSubmit} >Get Started</button>
-            </div>
+            </div>)}
           </div>
 
           <div className='dgx_header-img'>

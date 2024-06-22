@@ -6,6 +6,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    position: fixed;
   
   }
   
@@ -16,6 +21,11 @@
     padding: 100px 0 30px;
     /* max-width: 1800px; */
     background: radial-gradient(circle at 13% 19%, rgba(1, 18, 105, 1) 0%, rgba(4, 12, 24, 0.94) 66%);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* z-index: 5; */
+    /* position: fixed; */
   }
   
   .footer_row {
