@@ -19,7 +19,7 @@
 .loginHeader {
     position: relative;
     height: 300px;
-    background: url('D:\Node\dgx\dgx-community\public\IMAGES\nvbackground.3d29d9fd8361f49663af.jpg') no-repeat center center/cover;
+    background: url('../../../../public/IMAGES/nvbackground.3d29d9fd8361f49663af.jpg') no-repeat center center/cover;
 }
 
 .loginHeader .overlay {

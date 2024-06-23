@@ -1,7 +1,7 @@
 .discussion-header {
     position: relative;
     height: 300px;
-    background: url('D:\Node\dgx\dgx-community\public\IMAGES\nvbackground.3d29d9fd8361f49663af.jpg') no-repeat center center/cover;
+    background: url('../../../public/IMAGES/nvbackground.3d29d9fd8361f49663af.jpg') no-repeat center center/cover;
 }
 
 .discussion-header .overlay {
@@ -17,7 +17,7 @@
     align-items: center;
 }
 
-.filter{
+.filter {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -30,7 +30,7 @@
     margin: 4px;
 }
 
-.topDiscus{
+.topDiscus {
     /* display: flex;
     justify-content: flex-start; */
     align-items: center;
@@ -45,7 +45,7 @@
 
 }
 
-.recentDiscus{
+.recentDiscus {
     align-items: center;
     width: 100%;
     flex-direction: column;
@@ -55,10 +55,10 @@
     padding: 10px;
     margin: 4px;
     height: 35vh;
- 
+
 }
 
-.activeUsers{
+.activeUsers {
     align-items: center;
     width: 100%;
     flex-direction: column;
@@ -67,9 +67,10 @@
     border-radius: 5px;
     padding: 10px;
     margin: 4px;
-    height: 10vh;  
+    height: 10vh;
 }
-.subform_main{
+
+.subform_main {
     display: flex;
     width: 100%;
     margin: 0;
@@ -81,13 +82,14 @@
 }
 
 
-.subform_post{
+.subform_post {
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: flex-start;
     width: 75%;
 }
+
 .discussion-header h1 {
     font-size: 50px;
     margin: 0;
@@ -146,13 +148,13 @@ h1 {
     grid-template-columns: 12% 65% 23%;
 }
 
-.subforum-column1{
+.subforum-column1 {
     padding: 10px;
     margin: 4px;
     border-radius: 10px;
     background-color: #292b2e;
     width: 70%;
-} 
+}
 
 .subforum-column {
     padding: 10px;
@@ -161,7 +163,7 @@ h1 {
     background-color: #292b2e;
 }
 
-.subforum-column img{
+.subforum-column img {
     width: 55%;
 }
 
@@ -256,23 +258,24 @@ h1 {
     }
 }
 
-.createPost{
+.createPost {
     display: block;
-	/* margin: 30px auto; */
-	padding: 12px 24px;
-	background-color: var(--color-primary);
-	color: var(--color-secondary);
-	border: none;
-	border-radius: 5px;
-	font-size: 1em;
-	cursor: pointer;
-	transition: background-color 0.3s ease;
+    /* margin: 30px auto; */
+    padding: 12px 24px;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 
-    
+
     margin: 4px;
-    
+
 }
-.modal form{
+
+.modal form {
     height: 400px;
     width: 700px;
 }
@@ -290,9 +293,9 @@ h1 {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
-  }
-  
-  .modal-guts {
+}
+
+.modal-guts {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -307,27 +310,27 @@ h1 {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     overflow: auto;
-  }
-  
-  .modal-content {
+}
+
+.modal-content {
     width: 100%;
     padding: 10px;
     border: none;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .modal-content:focus {
+}
+
+.modal-content:focus {
     outline: none;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-  }
-  
-  .modal label {
+}
+
+.modal label {
     display: block;
     margin-bottom: 10px;
-  }
-  
-  .modal textarea {
+}
+
+.modal textarea {
     width: 100%;
     height: 200px;
     padding: 10px;
@@ -335,17 +338,17 @@ h1 {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     resize: vertical;
-  }
-  
-  .modal button[type="submit"] {
+}
+
+.modal button[type="submit"] {
     background-color: #4CAF50;
     color: #fff;
     padding: 10px 20px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
-  }
-  
-  .modal button[type="submit"]:hover {
+}
+
+.modal button[type="submit"]:hover {
     background-color: #3e8e41;
-  }
+}
