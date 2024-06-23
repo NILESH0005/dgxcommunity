@@ -31,19 +31,50 @@
 }
 
 .topDiscus{
-    /* display: flex;
-    justify-content: flex-start; */
+    /* /* display: flex; */
+    justify-content: flex-start; 
     align-items: center;
     width: 100%;
     flex-direction: column;
-    align-content: center;
+    /* align-content: center; */
+    background-color: #707274;
+    border-radius: 5px;
+    padding: 10px;
+    /* margin: 4px; */
+    height: 40vh;
+    margin: 4px 4px 0 4px; /* Update margin to remove top margin */
+
+}
+
+.topDiscus {
+    justify-content: flex-start;
+    /* align-items: center; */
+    width: 100%;
+    flex-direction: column;
     background-color: #707274;
     border-radius: 5px;
     padding: 10px;
     margin: 4px;
     height: 40vh;
+  }
+  
+  .discussion-list {
+    /* overflow-y: auto; */
+    height: 30vh; /* Adjust the height to fit your needs */
+    padding: 10px;
+  }
+  
+  .topDiscusss {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .topDiscusss:last-child {
+    border-bottom: none;
+  }
 
-}
+
 
 .recentDiscus{
     align-items: center;
@@ -69,6 +100,8 @@
     margin: 4px;
     height: 10vh;  
 }
+
+
 .subform_main{
     display: flex;
     width: 100%;

@@ -128,9 +128,47 @@ const DiscussionBoard = () => {
                 ))}
               </div>
               <div className='filter'>
-                <div className='topDiscus'><h2>Top Discussions</h2></div>
-                <div className='recentDiscus'>Recent Discussions</div>
-                <div className='activeUsers'>Active Users</div>
+                <div className='topDiscus'>
+                  <h2>Top Discussions</h2>
+                  <div className='discussion-list'>
+                    <div className='topDiscusss'>
+                      Title 1
+                    </div>
+                    <div className='topDiscusss'>
+                      Title 2
+                    </div>
+                    <div className='topDiscusss'>
+                      Title 3
+                    </div>
+                    <div className='topDiscusss'>
+                      Title 4
+                    </div>
+
+                  </div>
+                </div>
+                <div className='topDiscus'>
+                  <h2>Recent Discussions</h2>
+                  <div className='discussion-list'>
+                    <div className='topDiscusss'>
+                      Title 1
+                    </div>
+                    <div className='topDiscusss'>
+                      Title 2
+                    </div>
+                    <div className='topDiscusss'>
+                      Title 3
+                    </div>
+                    <div className='topDiscusss'>
+                      Title 4
+                    </div>
+
+                  </div>
+                </div>
+                <div class="activeUsers">
+                  <div class="activeUserList">
+                    {/* <!-- list of active users will be rendered here --> */}
+                  </div>
+                </div>
 
               </div>
             </div>

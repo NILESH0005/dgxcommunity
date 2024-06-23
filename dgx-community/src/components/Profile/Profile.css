@@ -85,10 +85,11 @@
     text-align: center;
     margin-bottom: 20px;
     width: 100%;
-    background: url('D:\Node\dgx\dgx-community\public\IMAGES\Nvidia-Wallpapers-HD.jpg');
+    background: url('D:\dgx\dgx-community\public\IMAGES\nvbackground.3d29d9fd8361f49663af.jpg');
+    align-items: center;
 }
 
-.overlay {
+.overlay1 {
 
     top: 0;
     left: 0;
@@ -102,12 +103,16 @@
 }
 
 .peron_bio{
+    /* width: 90%;
+    height: 90%;
+    position: relative;
+    top: 5%; */
     
 }
 
 .profile img {
     margin-top: 15px;
-    width: 14rem;
+    width: 10rem;
     border-radius: 50%;
     outline: rgb(34, 116, 107) solid 1px;
 }
