@@ -1,0 +1,249 @@
+/* .profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile img {
+    margin-top: 15px;
+    width: 16rem;
+    border-radius: 50%;
+    outline: rgb(34, 116, 107) solid 1px;
+}
+
+.intro {
+    width: 30%;
+    margin: auto;
+}
+
+.editProfile {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding: 12px 24px;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sidebarContainer {
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    gap: 1.8rem;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #6c757d;
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #76b900;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar a.active {
+    background-color: #adb5bd;
+    color: beige;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-left: 1px solid #ccc;
+} */
+
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+    background: url('D:\Node\dgx\dgx-community\public\IMAGES\Nvidia-Wallpapers-HD.jpg');
+}
+
+.overlay {
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.peron_bio{
+    
+}
+
+.profile img {
+    margin-top: 15px;
+    width: 14rem;
+    border-radius: 50%;
+    outline: rgb(34, 116, 107) solid 1px;
+}
+
+.intro {
+    width: 50%;
+    margin: auto;
+}
+
+.editProfile {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding: 12px 24px;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sidebarContainer {
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    gap: 1.8rem;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #6c757d;
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 800PX;
+    margin-bottom: 10PX;
+}
+
+.sidebar a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #76b900;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar a.active {
+    background-color: #adb5bd;
+    color: beige;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    /* background-color: #fff; */
+    border-left: 1px solid #ccc;
+}
+
+
+/*-------------post section---------*/
+
+.post_img img{
+    width: 75px;
+    margin-right: 8px;
+}
+
+.post_bar{
+   margin-top: 10 px;
+   /* background-color: #48494b; */
+   padding: 10px; 
+}
+
+.post{
+    padding: 10px; /* Increased padding for better spacing */
+    font-size: 13px;
+    display: flex;
+    margin-bottom: 20px;
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 8px; /* Rounded corners for the border */
+    background-color: #48494b; /* Background color for each post */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+.postCount{
+    font-weight: 100;
+    color: #405d9b;
+}
+
+.post_description span{
+    color:  #999;
+
+}
+
+
+/*---------stats-------------*/
+
+.statsCard{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+    margin-top: 1rem;
+}
+
+.card-single{
+    /* background-color: #999; */
+    padding: 1rem;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    height: 250px;
+    border: 1px solid #999;
+    width: 400px;
+}
+
+.card-flex{
+    display: flex;
+    grid-template-columns: 70% auto;
+}
+
+.card-head span{
+    display: block;
+    text-transform: uppercase;
+    color: #555;
+    font-size: .9rem;
+
+}
+
+.card-info small{
+    font-weight: 600;
+    color: #ccc;
+}
+
+.card-info h2{
+    font-size: 2.2rem;
+    color: #ccc;
+}
