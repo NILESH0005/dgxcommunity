@@ -6,7 +6,6 @@ import './Navbar.css';
 import { Link } from 'react-router-dom';
 import Cookies from 'js-cookie';
 // import UserProfile from '../../UserProfile/UserProfile';
-import Profile from '../../Profile/Profile';
 
 
 const Navbar = () => {
@@ -57,15 +56,17 @@ const Navbar = () => {
 
   const Menu = () => (
     <>
+    <div className='NavbarLinks_center'>
       <p><Link to="/DiscussionBoard">Discussions</Link></p>
       <p><Link to="/EventAndWorkshop">Event and Workshop</Link></p>
       <p><Link to="/CommunityGuidelines">Community Guidelines</Link></p>
       <p><Link to="/Contact Us">Contact Us</Link></p>
+      </div>
       {(userToken) ? (<> <div className="dropdown-container" onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}>
         <div
           className="profileBtn"
-          style={{ paddingRight: "80px" }}
+          // style={{ paddingRight: "80px" }}
 
         >
           <span>Wellcome  {userToken.Name}</span>

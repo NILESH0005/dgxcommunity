@@ -281,18 +281,18 @@ const HomeCommunity = () => {
             </div>
           </div>
         </div>
-        <div class="recentDisc_wrapper">
+        <div className="recentDisc_wrapper">
           <h2>Recent Discusions</h2>
-          <div class="carousel">
+          <div className="carousel">
             <div>
-              <div class="card">
-                <div class="card-header">
+              <div className="card">
+                <div className="card-header">
                   <img src="" />
                 </div>
-                <div class="card-body">
-                  <div class="card-content">
-                    <div class="card-title">This is the First slider</div>
-                    <div class="card-text">
+                <div className="card-body">
+                  <div className="card-content">
+                    <div className="card-title">This is the First slider</div>
+                    <div className="card-text">
                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                     </div>
                   </div>
@@ -300,14 +300,14 @@ const HomeCommunity = () => {
               </div>
             </div>
             <div>
-              <div class="card">
-                <div class="card-header">
+              <div className="card">
+                <div className="card-header">
                   <img src="" />
                 </div>
-                <div class="card-body">
-                  <div class="card-content">
-                    <div class="card-title">This is the Second slider</div>
-                    <div class="card-text">
+                <div className="card-body">
+                  <div className="card-content">
+                    <div className="card-title">This is the Second slider</div>
+                    <div className="card-text">
                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                     </div>
                   </div>
@@ -315,14 +315,14 @@ const HomeCommunity = () => {
               </div>
             </div>
             <div>
-              <div class="card">
-                <div class="card-header">
+              <div className="card">
+                <div className="card-header">
                   <img src="" />
                 </div>
-                <div class="card-body">
-                  <div class="card-content">
-                    <div class="card-title">This is the Third slider</div>
-                    <div class="card-text">
+                <div className="card-body">
+                  <div className="card-content">
+                    <div className="card-title">This is the Third slider</div>
+                    <div className="card-text">
                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                     </div>
                   </div>
@@ -330,14 +330,14 @@ const HomeCommunity = () => {
               </div>
             </div>
             <div>
-              <div class="card">
-                <div class="card-header">
+              <div className="card">
+                <div className="card-header">
                   <img src="" />
                 </div>
-                <div class="card-body">
-                  <div class="card-content">
-                    <div class="card-title">This is the Fourth slider</div>
-                    <div class="card-text">
+                <div className="card-body">
+                  <div className="card-content">
+                    <div className="card-title">This is the Fourth slider</div>
+                    <div className="card-text">
                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                     </div>
                   </div>
@@ -345,14 +345,14 @@ const HomeCommunity = () => {
               </div>
             </div>
             <div>
-              <div class="card">
-                <div class="card-header">
+              <div className="card">
+                <div className="card-header">
                   <img src="" />
                 </div>
-                <div class="card-body">
-                  <div class="card-content">
-                    <div class="card-title">This is the Fifth slider</div>
-                    <div class="card-text">
+                <div className="card-body">
+                  <div className="card-content">
+                    <div className="card-title">This is the Fifth slider</div>
+                    <div className="card-text">
                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                     </div>
                   </div>
@@ -360,14 +360,14 @@ const HomeCommunity = () => {
               </div>
             </div>
             <div>
-              <div class="card">
-                <div class="card-header">
+              <div className="card">
+                <div className="card-header">
                   <img src="" />
                 </div>
-                <div class="card-body">
-                  <div class="card-content">
-                    <div class="card-title">This is the Sixth slider</div>
-                    <div class="card-text">
+                <div className="card-body">
+                  <div className="card-content">
+                    <div className="card-title">This is the Sixth slider</div>
+                    <div className="card-text">
                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                     </div>
                   </div>

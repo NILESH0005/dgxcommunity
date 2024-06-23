@@ -102,11 +102,14 @@ const DiscussionBoard = () => {
             <div className='subform_main'>
               <div className='subform_post'>
 
-                {subforum.posts.map((post, postIndex) => (
+                {
+                subforum.posts.length>1?
+                subforum.posts.map((post, postIndex) => (
+                  postIndex>=1?
                   <div key={postIndex} className="subforum-row">
                     <div className="subforum-icon subforum-column center">
                       {/* <i className="fa fa-car"></i> */}
-                      <img src='/IMAGES/user.png' />
+                      <img src='/IMAGES/user.png' alt='images'/>
                       <div className='viewProfile_btn'>
 
                       </div>
@@ -119,13 +122,13 @@ const DiscussionBoard = () => {
                     </div>
                     <div className="subforum-info subforum-column">
                       <b>
-                        <a href="">{post.info}</a>
+                        <a href=" ">{post.info}</a>
                       </b>
                       <br />
                       on <small>{post.date}</small>
                     </div>
-                  </div>
-                ))}
+                  </div>:<></>
+                )):<>We don't have any discussion yet, be the first to start the discussion</>}
               </div>
               <div className='filter'>
                 <div className='topDiscus'><h2>Top Discussions</h2></div>

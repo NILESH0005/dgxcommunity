@@ -29,32 +29,6 @@ import { connectToDatabase, closeConnection } from '../db.js';
 
 
 export const addUser = async (req, res) => {
-<<<<<<< HEAD
-    try {
-        connectToDatabase((err, conn) => {
-            if (err) {
-              res.status(500).send('Failed to connect to database');
-              return;
-            }
-            
-            const query = 'SELECT * FROM Users';
-        
-            conn.query(query, (queryErr, rows) => {
-              if (queryErr) {
-                res.status(500).send('Query error');
-                closeConnection();
-                return;
-              }
-        
-              res.json(rows);
-              closeConnection();
-            });
-          })
-        
-    }catch (error) {
-      res.status(404).json({ message: error.message });
- }
-=======
   try {
     connectToDatabase(async (err, conn) => {
       if (err) {
@@ -95,7 +69,6 @@ export const addUser = async (req, res) => {
   } catch (error) {
     res.status(404).json({ message: error.message });
   }
->>>>>>> 5878a85659845077853bb0ac40b390d6e6f86b38
 }
 
 
