@@ -11,7 +11,7 @@ export const addUser = async (req, res) => {
               res.status(500).send('Failed to connect to database');
               return;
             }
-        
+            
             const query = 'SELECT * FROM Users';
         
             conn.query(query, (queryErr, rows) => {
