@@ -26,9 +26,13 @@
 
 // db.js
 import sql from 'msnodesqlv8';
-
-const connectionString = 'Driver={ODBC Driver 17 for SQL Server};Server=DESKTOP-UC5U2HE\\SQLEXPRESS;Database=DGX_COMMUNITY;Trusted_Connection=yes;';
-
+import dotenv from 'dotenv'
+dotenv.config()
+// const connectionString = 'Driver={ODBC Driver 17 for SQL Server};Server=DESKTOP-UC5U2HE\\SQLEXPRESS;Database=DGX_COMMUNITY;Trusted_Connection=yes;';
+const connectionString = process.env.DATABASE_URL;
+// console.log(connectionString===connectionStrings,typeof(connectionStrings),typeof(connectionString))
+// console.log(connectionStrings)
+// console.log(connectionString)
 let connection;
 
 const connectToDatabase = (callback) => {

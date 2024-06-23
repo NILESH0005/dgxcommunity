@@ -5,7 +5,7 @@ import helmet from 'helmet'
 import dotenv from 'dotenv'
 
 import userRoutes from './routes/user.js'
-import { connectToDatabase, closeConnection } from './db.js';
+// import { connectToDatabase, closeConnection } from './db.js';
 
 
 

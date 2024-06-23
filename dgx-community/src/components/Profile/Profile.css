@@ -178,49 +178,54 @@
 
 /*-------------post section---------*/
 
-.post_img img{
+.post_img img {
     width: 75px;
     margin-right: 8px;
 }
 
-.post_bar{
-   margin-top: 10 px;
-   /* background-color: #48494b; */
-   padding: 10px; 
+.post_bar {
+    margin-top: 10 px;
+    /* background-color: #48494b; */
+    padding: 10px;
 }
 
-.post{
-    padding: 10px; /* Increased padding for better spacing */
+.post {
+    padding: 10px;
+    /* Increased padding for better spacing */
     font-size: 13px;
     display: flex;
     margin-bottom: 20px;
-    border: 1px solid #ccc; /* Add a border */
-    border-radius: 8px; /* Rounded corners for the border */
-    background-color: #48494b; /* Background color for each post */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    border: 1px solid #ccc;
+    /* Add a border */
+    border-radius: 8px;
+    /* Rounded corners for the border */
+    background-color: #48494b;
+    /* Background color for each post */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow effect */
 }
 
-.postCount{
+.postCount {
     font-weight: 100;
     color: #405d9b;
 }
 
-.post_description span{
-    color:  #999;
+.post_description span {
+    color: #999;
 
 }
 
 
 /*---------stats-------------*/
 
-.statsCard{
+.statsCard {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 3rem;
     margin-top: 1rem;
 }
 
-.card-single{
+.card-single {
     /* background-color: #999; */
     padding: 1rem;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
@@ -230,12 +235,12 @@
     width: 400px;
 }
 
-.card-flex{
+.card-flex {
     display: flex;
     grid-template-columns: 70% auto;
 }
 
-.card-head span{
+.card-head span {
     display: block;
     text-transform: uppercase;
     color: #555;
@@ -243,12 +248,12 @@
 
 }
 
-.card-info small{
+.card-info small {
     font-weight: 600;
     color: #ccc;
 }
 
-.card-info h2{
+.card-info h2 {
     font-size: 2.2rem;
     color: #ccc;
 }
