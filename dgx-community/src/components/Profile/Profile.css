@@ -82,11 +82,11 @@
 }
 
 .profile {
-    text-align: center;
+    /* text-align: center; */
     margin-bottom: 20px;
     width: 100%;
     background: url('D:\dgx\dgx-community\public\IMAGES\nvbackground.3d29d9fd8361f49663af.jpg');
-    align-items: center;
+    /* align-items: center; */
 }
 
 .overlay1 {
@@ -96,17 +96,17 @@
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .peron_bio{
-    /* width: 90%;
+    width: 90%;
     height: 90%;
     position: relative;
-    top: 5%; */
+    top: 5%; 
     
 }
 
@@ -119,7 +119,7 @@
 
 .intro {
     width: 50%;
-    margin: auto;
+    /* margin: auto; */
 }
 
 .editProfile {

@@ -84,7 +84,7 @@ const HomeCommunity = () => {
                 navigate('/MainForm', { state: { form: 1 } });
               }, 1000);
             }
-            else if(response.data.message.Data.flag_password_change == true){
+            else if (response.data.message.Data.flag_password_change == true) {
               toast.success('Login to Continue');
               setTimeout(() => {
 
@@ -187,30 +187,31 @@ const HomeCommunity = () => {
             </div>
           </div>
         </section> */}
-        <div className='dgx_header section_padding' id='home'>
+        <div className='dgx_header mx-5 px-5' id='home'>
           <div>
             {userToken ? (<> <div className='dgx_header-content'>
               <h1 className='gradient_text'>Welcome {userToken.Name} to the NVIDIA DGX Community Certifications Connect!</h1>
               <p>Building a stronger tomorrow!</p>
-            </div></>) : (<div className='dgx_header-content'>
+            </div></>) : (<><div className='dgx_header-content'>
               <h1 className='gradient_text'>Welcome  to the NVIDIA DGX Community Certifications Connect!</h1>
               <p>Hurry up join our community now!</p>
               <p>Building a stronger tomorrow!</p>
-            </div>)}
-            {userToken ? <></> : (<div className='dgx_header-content_input'>
-              <input placeholder='Your Email Address' type='email'
-                name="EmailId"
-                value={email}
-                onChange={handleChangeEmail}
-                spellCheck='false'
-                id='email-field'
-                required ></input>
-              <button type='button' onClick={handleSubmit} >Get Started</button>
-            </div>)}
+              <div className='dgx_header-content_input d-flex w-50 mx -auto'>
+                <input placeholder='Your Email Address' type='email'
+                  name="EmailId"
+                  value={email}
+                  onChange={handleChangeEmail}
+                  spellCheck='false'
+                  id='email-field'
+                  required ></input>
+                <button type='button' onClick={handleSubmit} >Get Started</button>
+              </div>
+            </div>
+            </>)}
           </div>
 
           <div className='dgx_header-img'>
-            <img src='\IMAGES\myArt_figma.png' />
+            <img src='\IMAGES\myArt_figma.png' alt='image' />
           </div>
         </div>
 

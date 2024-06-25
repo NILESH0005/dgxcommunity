@@ -1,6 +1,6 @@
 import './App.css';
 // import './main.js';
-// import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Navbar from './components/partials/Navbar/Navbar';
 import HomeCommunity from './components/HomeCommunity/HomeCommunity';

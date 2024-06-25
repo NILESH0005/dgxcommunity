@@ -104,22 +104,29 @@ const Profile = () => {
     <div className="profile-mainContainer">
       <div className="profile-container">
         <div className="profile">
-          <div className='overlay1'>
-            <div className='peron_bio'>
+          <div className='overlay1 d-flex flex-row container justify-content-center mb-3'>
+            <div className='peron_bio start-0'>
               <img src="./IMAGES/profilePic.jpg" alt="Profile" />
-              <h2>Hello.</h2>
-              <p className="intro">I am a professional front-end developer, “Music is life itself”.</p>
               <div>
-                <button className='editProfile' onClick={() => alert('Edit Profile clicked!')}>Edit Profile</button>
+                <button className='editProfile' data-bs-dismiss="modal" onClick={() => alert('Edit Profile clicked!')}>Edit Profile</button>
               </div>
-              <ul>
-              <li><strong>Name:</strong> John Doe</li>
-              <li><strong>Age:</strong> 30</li>
-              <li><strong>Location:</strong> New York, USA</li>
-              <li><strong>Occupation:</strong> Front-end Developer</li>
-            </ul>
+              <h2 className='font-monospace'>Hello.</h2>
+              <p className="intro font-monospace fs-5">I am a professional front-end developer, “Music is life itself”.</p>
+              { }
             </div>
-            
+            <div className='profile_details'>
+              <ul className='font-monospace fs-5'>
+                <li><strong>Name:</strong> John Doe</li>
+                <li><strong>Age:</strong> 30</li>
+                <li><strong>Location:</strong> New York, USA</li>
+                <li><strong>Occupation:</strong> Front-end Developer</li>
+              </ul>
+            </div>
+          </div>
+
+
+          <div class="modal-dialog modal-fullscreen-sm-down">
+            ...
           </div>
         </div>
 

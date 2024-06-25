@@ -8,7 +8,7 @@
 
 
 body {
-  background: var(--color-bg); 
+  background: var(--color-bg) !important; 
   /* background-color: black; */
   background-color:  'linear-gradient(180deg, #345aa4 -28.35%, rgba(63, 0, 156, 0) 153.96%) !important'; 
   /* background-color: linear-gradient(180deg, #345aa4 -28.35%, rgba(63, 0, 156, 0) 153.96%) !important;  */
